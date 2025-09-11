@@ -34,11 +34,28 @@ body {
     margin-bottom: 60px;
 }
 
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.profile-picture {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #f0f0f0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
 .name {
     font-size: 3rem;
     font-weight: 600;
     color: #1a1a1a;
-    margin-bottom: 20px;
+    margin: 0;
     letter-spacing: -0.02em;
 }
 
@@ -335,6 +352,7 @@ h2 {
 }
 
 .social-link:hover {
+    color: #ffffff;
     border-color: #1a1a1a;
     transform: translateY(-2px);
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
@@ -344,17 +362,6 @@ h2 {
     filter: brightness(0) invert(1);
 }
 
-/* Special handling for black icons (GitHub and X) */
-.social-link[href*="github"]:hover .social-icon,
-.social-link[href*="x.com"]:hover .social-icon {
-    filter: brightness(0) invert(1);
-}
-
-.social-link[href*="github"] .social-icon,
-.social-link[href*="x.com"] .social-icon {
-    filter: none;
-}
-
 .social-icon {
     width: 24px;
     height: 24px;
@@ -362,6 +369,7 @@ h2 {
     position: relative;
     z-index: 1;
 }
+
 
 /* Footer */
 .footer {
@@ -382,6 +390,16 @@ h2 {
     .header {
         padding: 60px 0 40px;
         margin-bottom: 40px;
+    }
+    
+    .header-content {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .profile-picture {
+        width: 60px;
+        height: 60px;
     }
     
     .name {
