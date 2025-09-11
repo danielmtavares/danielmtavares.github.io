@@ -272,6 +272,8 @@ h2 {
     display: flex;
     gap: 15px;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .project-link {
