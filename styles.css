@@ -65,7 +65,6 @@ body {
     font-weight: 300;
     margin-bottom: 30px;
     min-height: 2rem;
-    transition: all 0.3s ease;
 }
 
 .description {
@@ -222,7 +221,6 @@ h2 {
     border: 1px solid #f0f0f0;
     border-radius: 12px;
     padding: 30px;
-    transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
 }
@@ -236,7 +234,6 @@ h2 {
     height: 3px;
     background: linear-gradient(90deg, #1a1a1a, #666);
     transform: scaleX(0);
-    transition: transform 0.3s ease;
 }
 
 .project-card:hover::before {
@@ -285,7 +282,6 @@ h2 {
     padding: 8px 16px;
     border: 1px solid #e0e0e0;
     border-radius: 6px;
-    transition: all 0.3s ease;
 }
 
 .project-link:hover {
@@ -329,7 +325,6 @@ h2 {
     color: #1a1a1a;
     font-weight: 500;
     font-size: 0.9rem;
-    transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
 }
@@ -343,7 +338,6 @@ h2 {
     bottom: 0;
     background: #1a1a1a;
     transform: scale(0);
-    transition: transform 0.3s ease;
     border-radius: 50%;
 }
 
@@ -540,37 +534,4 @@ h2 {
         width: 100%;
         text-align: center;
     }
-}
-
-/* Smooth animations */
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.timeline-item,
-.project-card {
-    animation: fadeInUp 0.6s ease-out;
-}
-
-.timeline-item:nth-child(2) {
-    animation-delay: 0.1s;
-}
-
-.timeline-item:nth-child(3) {
-    animation-delay: 0.2s;
-}
-
-.project-card:nth-child(2) {
-    animation-delay: 0.1s;
-}
-
-.project-card:nth-child(3) {
-    animation-delay: 0.2s;
 }

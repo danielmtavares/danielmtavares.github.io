@@ -1,4 +1,3 @@
-// Random text effect similar to danperks.dev
 class RandomTextEffect {
     constructor(element, texts, options = {}) {
         this.element = element;
@@ -18,7 +17,6 @@ class RandomTextEffect {
         // Set initial text
         this.element.textContent = this.texts[0];
         
-        // Start the rotation
         this.startRotation();
     }
     
@@ -60,7 +58,6 @@ class RandomTextEffect {
     }
 }
 
-// Professional titles and descriptions
 const professionalTitles = [
     'Principal Software Engineer',
     'Game Developer',
@@ -100,56 +97,6 @@ document.addEventListener('DOMContentLoaded', function() {
                     block: 'start'
                 });
             }
-        });
-    });
-    
-    // Add intersection observer for fade-in animations
-    const observerOptions = {
-        threshold: 0.1,
-        rootMargin: '0px 0px -50px 0px'
-    };
-    
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.style.opacity = '1';
-                entry.target.style.transform = 'translateY(0)';
-            }
-        });
-    }, observerOptions);
-    
-    // Observe timeline items and project cards for scroll animations
-    const animatedElements = document.querySelectorAll('.timeline-item, .project-card');
-    animatedElements.forEach((el, index) => {
-        el.style.opacity = '0';
-        el.style.transform = 'translateY(30px)';
-        el.style.transition = `opacity 0.6s ease ${index * 0.1}s, transform 0.6s ease ${index * 0.1}s`;
-        observer.observe(el);
-    });
-});
-
-// Add some interactive hover effects
-document.addEventListener('DOMContentLoaded', function() {
-    // Add hover effect to social links
-    const socialLinks = document.querySelectorAll('.social-link');
-    socialLinks.forEach(link => {
-        link.addEventListener('mouseenter', function() {
-            this.style.transform = 'translateY(-2px) scale(1.05)';
-        });
-        
-        link.addEventListener('mouseleave', function() {
-            this.style.transform = 'translateY(0) scale(1)';
-        });
-    });
-    
-    // Add click effect to project cards
-    const projectCards = document.querySelectorAll('.project-card');
-    projectCards.forEach(card => {
-        card.addEventListener('click', function() {
-            this.style.transform = 'translateY(-2px) scale(1.02)';
-            setTimeout(() => {
-                this.style.transform = 'translateY(-2px) scale(1)';
-            }, 150);
         });
     });
 });
