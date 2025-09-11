@@ -294,17 +294,17 @@ h2 {
 .social-links {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 20px;
     flex-wrap: wrap;
-    margin-top: 40px;
+    margin: 20px 0;
 }
 
 .social-link {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
     background: #f8f8f8;
     border: 1px solid #e0e0e0;
     border-radius: 50%;
@@ -342,6 +342,17 @@ h2 {
 
 .social-link:hover .social-icon {
     filter: brightness(0) invert(1);
+}
+
+/* Special handling for black icons (GitHub and X) */
+.social-link[href*="github"]:hover .social-icon,
+.social-link[href*="x.com"]:hover .social-icon {
+    filter: brightness(0) invert(1);
+}
+
+.social-link[href*="github"] .social-icon,
+.social-link[href*="x.com"] .social-icon {
+    filter: none;
 }
 
 .social-icon {
@@ -422,12 +433,12 @@ h2 {
     }
     
     .social-links {
-        gap: 20px;
+        gap: 15px;
     }
     
     .social-link {
-        width: 50px;
-        height: 50px;
+        width: 35px;
+        height: 35px;
         font-size: 0.8rem;
     }
     
@@ -491,6 +502,15 @@ h2 {
     
     .project-links iframe {
         height: 150px;
+    }
+    
+    .social-links {
+        gap: 15px;
+    }
+    
+    .social-link {
+        width: 35px;
+        height: 35px;
     }
     
     .project-links {
