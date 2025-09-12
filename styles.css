@@ -529,7 +529,7 @@ h2 {
     
     .project-links {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
     }
     
     .project-link {
