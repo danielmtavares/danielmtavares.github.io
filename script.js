@@ -61,11 +61,10 @@ class RandomTextEffect {
 const professionalTitles = [
     'Principal Software Engineer',
     'Game Developer',
-    'Unity Expert',
+    'Unreal Developer',
+    'Unity Developer',
     'Cross-Platform Developer',
     'Technical Leader',
-    'Mobile Game Engineer',
-    'VR Developer',
     'System Architect',
     'Code Craftsman',
     'Engineering Mentor'
