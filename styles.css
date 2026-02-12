@@ -103,6 +103,7 @@ body {
 
 /* Section Styles */
 section {
+    scroll-margin-top: 60px;
     margin-bottom: 80px;
 }
 
